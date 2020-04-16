@@ -1,0 +1,309 @@
+@charset "UTF-8";
+@import url(../css/normalize-css.css);
+*,
+*:after,
+*:before {
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+  padding: 0;
+  margin: 0; }
+
+menu {
+  background-color: #f74c55;
+  background-image: url(../img/Без-имени-2.png);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 500px;
+  margin: 0;
+  padding: 0; }
+  menu .btn:hover {
+    background-color: rgba(245, 245, 245, 0.548);
+    color: #f74c55;
+    border-color: #91282e;
+    cursor: pointer; }
+
+.menu__top {
+  height: 15%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .menu__top ul {
+    display: flex;
+    justify-content: space-around;
+    width: 400px;
+    list-style: none;
+    text-transform: uppercase;
+    padding: 0; }
+    .menu__top ul li {
+      font-family: "Open Sans", sans-serif;
+      font-size: 1.6rem;
+      font-weight: 300;
+      line-height: 24px;
+      color: white; }
+
+.list {
+  display: none;
+  width: 40px;
+  height: 30px; }
+  .list .line {
+    height: 3px;
+    width: inherit;
+    background-color: #fff; }
+
+a {
+  text-decoration: none;
+  color: white;
+  transition: 0.5s; }
+  a:hover {
+    color: #ffb2b6; }
+
+.menu__down {
+  height: 85%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; }
+
+.container {
+  max-width: 1024px;
+  height: 100%;
+  margin: 0 auto; }
+
+.headliner {
+  width: 48%;
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-start; }
+
+.headline {
+  font-family: "Open Sans", sans-serif;
+  font-size: 4rem;
+  font-weight: 300;
+  line-height: 24px;
+  color: white;
+  line-height: 44px;
+  letter-spacing: -2px;
+  margin: 0; }
+
+.subtitle {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 24px;
+  color: white; }
+
+.btn {
+  font-family: "Open Sans", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 300;
+  line-height: 24px;
+  color: white;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  padding: 10px 10px;
+  transition: 0.5s;
+  font-weight: 400; }
+
+.description-block {
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px; }
+  .description-block .container {
+    height: 300px;
+    max-width: 870px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start; }
+  .description-block p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 24px;
+    color: white;
+    color: #404040; }
+
+.description__headline {
+  font-family: "Open Sans", sans-serif;
+  font-size: 3rem;
+  font-weight: 300;
+  line-height: 24px;
+  color: white;
+  line-height: 40px;
+  color: #000000; }
+
+.rectangles {
+  display: inline-flex; }
+  .rectangles div {
+    width: 37px;
+    height: 32px; }
+
+.r_orange {
+  background-color: #ee732f; }
+
+.r_purple {
+  background-color: #f74c55; }
+
+.r_green {
+  background-color: #2d5f3b; }
+
+.r_dark {
+  background-color: #404040; }
+
+.r_pink {
+  background-color: #fb636b; }
+
+.boxes {
+  background-color: #f74c55;
+  height: 400px; }
+  .boxes .box__inner {
+    width: 380px;
+    height: inherit;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 0 20px; }
+  .boxes .headline {
+    font-family: "Open Sans", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 300;
+    line-height: 24px;
+    color: white;
+    margin-left: 50px;
+    position: relative;
+    font-weight: 400;
+    line-height: 44px; }
+    .boxes .headline::before {
+      position: absolute;
+      top: 5px;
+      left: -50px; }
+
+.box1 {
+  background-color: #404040;
+  width: 35%;
+  float: left;
+  display: flex;
+  justify-content: flex-end; }
+  .box1 .headline::before {
+    content: url(../img/Без-имени-4.png); }
+
+.box2 {
+  background-color: #f74c55;
+  width: 30%;
+  float: left;
+  display: flex;
+  justify-content: center; }
+  .box2 .headline::before {
+    content: url(../img/Без-имени-3.png); }
+
+.box3 {
+  background-color: #2d5f3b;
+  width: 35%;
+  float: left; }
+  .box3 .headline::before {
+    content: url(../img/Без-имени-5.png); }
+
+.box {
+  height: 100%; }
+  .box p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 24px;
+    color: white; }
+
+.btn-add {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.45);
+  margin-left: 300px;
+  position: relative; }
+
+.add {
+  font-size: 54px;
+  position: absolute;
+  font-weight: 800;
+  left: 20px;
+  transform: translateX(-50%);
+  line-height: 40px; }
+
+.overlay {
+  background-image: url(../img/Layer\ 1.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  height: 700px; }
+
+.bc {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); }
+  .bc .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+  .bc .headline {
+    font-family: "Open Sans", sans-serif;
+    font-size: 6rem;
+    font-weight: 300;
+    line-height: 24px;
+    color: white;
+    line-height: 70px;
+    margin-bottom: 20px;
+    text-align: center; }
+    .bc .headline span {
+      font-weight: 700; }
+  .bc .btn:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+    color: rgba(0, 0, 0, 0.7); }
+
+.footer {
+  height: 80px;
+  width: 100%; }
+
+.lines {
+  display: flex;
+  height: 10px;
+  width: 100%; }
+
+.line {
+  height: 100%;
+  width: 100%; }
+
+.copy {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .copy p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 24px;
+    color: white;
+    color: black; }
+
+.headliner {
+  animation-name: headliner;
+  animation-duration: 1s; }
+
+@keyframes headliner {
+  0% {
+    margin-left: 500px; }
+  100% {
+    margin-left: 0; } }
